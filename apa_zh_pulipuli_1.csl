@@ -751,7 +751,7 @@
   
   <macro name="title">
     <choose>
-      <if type="report thesis" match="any">
+      <if type="report thesis paper-conference" match="any">
         <text variable="title" font-style="italic"/>
         <group prefix="(" suffix=")" delimiter=" ">
           <text variable="genre"/>
@@ -776,7 +776,7 @@
         </choose>
       </else-if>
       <else>
-        <text variable="title" font-style="italic"/>
+        <text variable="title"/>
       </else>
     </choose>
   </macro>
@@ -1406,7 +1406,7 @@
         <text variable="container-title" font-style="italic" text-case="title"/>
       </if>
       <else-if type="bill legal_case legislation" match="none">
-        <text variable="container-title" font-style="italic"/>
+        <text variable="container-title" font-style="normal"/>
       </else-if>
       <else>
         <group delimiter=" " prefix=", ">

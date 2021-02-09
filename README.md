@@ -9,3 +9,40 @@
 -[zotero Creating Bibliographies](https://www.zotero.org/support/creating_bibliographies)
 
 -[CSL 1.0.1 Specification](https://docs.citationstyles.org/en/stable/specification.html)
+
+Appendix III - Types
+article
+article-magazine
+article-newspaper
+article-journal
+bill
+book
+broadcast
+chapter
+dataset
+entry
+entry-dictionary
+entry-encyclopedia
+figure
+graphic
+interview
+legislation
+legal_case
+manuscript
+map
+motion_picture
+musical_score
+pamphlet
+paper-conference
+patent
+post
+post-weblog
+personal_communication
+report
+review
+review-book
+song
+speech
+thesis
+treaty
+webpage

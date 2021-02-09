@@ -7,8 +7,8 @@
 - [zotero Creating Bibliographies](https://www.zotero.org/support/creating_bibliographies)
 - [CSL 1.0.1 Specification](https://docs.citationstyles.org/en/stable/specification.html)
 
-## CSL 1.0.1 Specification
-### Appendix III - Types
+### CSL 1.0.1 Specification
+#### Appendix III - Types
 - article
 - article-magazine
 - article-newspaper

@@ -1544,16 +1544,27 @@
     </sort>
     
     <layout locale="zh-tw zh-cn Chinese chi chinese zh-Hant zh-TW zh-CN  中文 繁體中文 簡體中文" prefix="（" suffix="）" delimiter="；">
-        <group delimiter="，">
-          <text macro="author-short-zh"/>
-          <text macro="issued-year-zh"/>
-          <text macro="citation-locator-zh"/>
-        </group>
+        <choose>
+          <if variable="translator">
+            <group delimiter=", ">
+              <text macro="author-short-zh"/>
+              <text macro="issued-year-zh"/>
+              <text macro="citation-locator-zh"/>
+            </group>
+          </if>
+          <else>
+            <group delimiter="，">
+              <text macro="author-short-zh"/>
+              <text macro="issued-year-zh"/>
+              <text macro="citation-locator-zh"/>
+            </group>
+          </else>
+        </choose>
     </layout>
 
     <!---->
 
-    <layout prefix=" (" suffix="）" delimiter="; ">
+    <layout prefix="（" suffix="）" delimiter="; ">
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued-year"/>

@@ -626,7 +626,7 @@
               <text term="retrieved" text-case="capitalize-first" suffix=" "/>
               <text term="from" suffix=" "/>
               <text variable="archive" suffix="."/>
-              <text variable="archive_location" prefix=" (" suffix=")"/>
+              <text variable="archive_location" prefix="(" suffix=")"/>
             </group>
           </if>
           <else>
@@ -717,7 +717,7 @@
                 <condition variable="URL" match="all" />
               </conditions>
               <text value="。"/>
-              <text variable="URL" prefix="檢自："/>
+              <text variable="URL" prefix="取自："/>
             </else-if>
             <else>
               <text value="。"/>
@@ -736,7 +736,7 @@
                 <date-part name="day" suffix="日"/>
               </date>
               <group>
-                <text variable="archive" prefix="檢自："/>
+                <text variable="archive" prefix="取自："/>
               </group>
             </group>
           </if>
@@ -769,7 +769,11 @@
           <text variable="number" prefix="No. "/>
         </group>
       </if>
-      <else-if type="book graphic  motion_picture report song manuscript speech" match="any">
+       <else-if type="post webpage" match="any">
+        <!-- Webpages are always italicized -->
+        <text variable="title" font-style="italic"/>
+      </else-if>
+      <else-if type="book graphic motion_picture report song manuscript speech" match="any">
         <!---This is a hack until we have a computer program type -->
         <choose>
           <if variable="version">
@@ -1594,7 +1598,7 @@
 
     <!---->
 
-    <layout prefix="(" suffix=")" delimiter="; ">
+    <layout prefix="（" suffix="）" delimiter="; ">
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued-year"/>
